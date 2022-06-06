@@ -1,27 +1,30 @@
 :root{
 
     --black: #000000;
+    --dkblue: #0d314b;
     --blackligth: #102944;
     --bluedark: #096aab;
     --blue: #08b6ff;
-    --aqua: #0efff9;
+    --aqua: #00fffa;
     --white:#ffffff;
-    --pink:#00747C;
+    --greendark:#00747C;
     --mono:'Ubuntu Mono', monospace;
     --sans:'Ubuntu', sans-serif;
+    --font-size: 1.3rem;
 }
-
 
 *{
     margin: 0;
     padding: 0;
     font-family: var(--sans);
     box-sizing: border-box;
-
 }
-html {
 
+body {
+    color: white;
     font-size: 1.5rem;
+    background-color: black;
+    font-size: var(--font-size);
 
 }
 
@@ -29,13 +32,6 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-}
-
-body{
-    background-color: var(--black);
-    max-width: 1200px;
-    margin:0 auto;
-
 }
 
 a {
@@ -48,19 +44,23 @@ a:hover {
     color: var(--white);
 }
 
-
+.gradiente {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 104, 121, 0.9486388305322129) 35%, rgba(0, 212, 255, 1) 100%);
+    height: 1px;
+}
 
 /* seccion de navegacion */
 
 #navegador{
+
     position: fixed;
     width: 100%;
-    max-width: inherit;
+    background-color: black;
 }
 
-
-header {
-
+ header {
+    max-width: 1200px;
+    margin:0 auto;
     display: flex;
     background-color: var(--black);
     font-size: 80%;
@@ -69,10 +69,15 @@ header {
     padding: 1rem;
 }
 
-
-
 nav  a {
     margin-left: 1rem;
+}
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+nav [class*="fa-"]:hover{
+    color: var(--white);
 }
 
 
@@ -80,67 +85,105 @@ nav  a {
     display:none;
 }
 
-
 #check {
     display: none;
 }
 
 
 /* seccion de nombre */
+
 img{
-    border: 7px solid var(--aqua);
+    border: 5px solid var(--aqua);
     border-radius: 3px;
-    max-width: 60%;
+    max-width: 55%;
     height: auto;
     display: block;
     margin: auto;
-
 }
 #intro{
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: var(--black);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: white;
-    padding: 9rem 1rem 5rem;
+    padding: 8rem 1rem ;
     align-items: center;
-
-
 }
+
 #intro p{
     font-size: 1rem;
-    line-height: 1.8rem;
-
+    line-height: 2.3rem;
 }
 
 #intro .name{
-    font-size: 0.7rem;
     font-family: var(--mono);
 }
+
 .name span{
     font-family: var(--sans);
-    font-size: 2rem;
+    font-size: 3rem;
     display: block;
-    text-shadow: 2px 2px 4px black, 0 0 25px aqua, 0 0 5px darkblue;
-
 
 }
 
-#intro h2{
-    font-size: 2.5rem;
+#intro h1{
+    font-size: 4rem;
     font-weight: normal;
     color: var(--aqua);
 }
+
 .botton{
-    background-color: var(--pink);
+    background-color: #39adad;
     color: var(--white);
-    text-decoration: none;
     padding: 0.2rem;
     border-radius: 7px;
 }
+
 .botton:hover {
-    background-color: var(--aqua);
-    color:var(--pink);
+    background-color: var(--greendark);
+    text-decoration-line: none;
+
 }
 
+/* section contacto*/
+/* background color div */
+.section-dkblue {
+    background-color: var(--dkblue);
+}
+#contacto{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0 ;
+}
+
+#contacto p{
+    margin-top: 3rem;
+}
+
+/* section footer*/
+footer{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 3rem;
+}
+footer [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+footer [class*="fa-"]:hover{
+    color: var(--white);
+}
 
 
 @media (max-width: 750px) {
@@ -149,7 +192,6 @@ img{
         font-size: 40px;
         color: var(--aqua);
         cursor: pointer;
-
     }
 
     #bars{
@@ -158,7 +200,6 @@ img{
 
     #check:checked ~ nav {
         display: block;
-
     }
 
     header {
@@ -167,7 +208,6 @@ img{
         padding: 1rem;
         flex-wrap: wrap;
         align-items: center;
-
     }
 
     header > a {
@@ -188,33 +228,44 @@ img{
     }
 
     /*section name*/
+
     #intro{
         display: block;
-        padding-top: 5rem ;
-
-
+        padding:8rem 1rem;
     }
+
     #intro div{
         padding-bottom: 50px;
-
     }
-    #intro h2{
-        font-size: 1.8rem;
 
+    #intro h1{
+        font-size: 2.5rem;
     }
 
     .name span{
-        font-size: 1.5rem;
-
+        font-size: 2rem;
     }
 
     #intro p{
-        font-size: 0.7rem;
-        line-height: 1.5rem;
-
+        font-size: 1rem;
+        line-height: 1.7rem;
     }
 
+    /* section contacto*/
 
+    #contacto p{
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
+
+    /* section footer*/
+
+    footer h2{
+        font-size: 1.3rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
 
 
 
