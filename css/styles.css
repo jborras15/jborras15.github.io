@@ -21,7 +21,7 @@
 html {
 
     font-size: 1.5rem;
-    background-color:var(--black);
+
 }
 
 *,
@@ -33,9 +33,21 @@ html {
 body{
     background-color: var(--black);
     max-width: 1200px;
-    margin: auto;
+    margin:0 auto;
 
 }
+
+a {
+    color: var(--aqua);
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: var(--white);
+}
+
+
 
 /* seccion de navegacion */
 
@@ -54,28 +66,15 @@ header {
     align-content: center;
     justify-content: space-between;
     padding: 1rem;
-
-
 }
 
 
 
 nav  a {
     margin-left: 1rem;
-
 }
 
-a {
-    color: var(--aqua);
-    text-decoration-line: none;
 
-}
-
-a:hover {
-    text-decoration-line: underline;
-    color: var(--white);
-
-}
 #bars{
     display:none;
 }
@@ -83,11 +82,47 @@ a:hover {
 
 #check {
     display: none;
+}
+
+/* seccion de nombre */
+#intro{
+    color: white;
+    padding: 10rem 1rem 5rem;
+
+}
+#intro p{
+    font-size: 1rem;
+    line-height: 1.8rem;
 
 }
 
+#intro .name{
+    font-size: 0.7rem;
+    font-family: var(--mono);
+}
+.name span{
+    font-family: var(--sans);
+    font-size: 2rem;
+    display: block;
 
+}
 
+#intro h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--aqua);
+}
+.botton{
+    background-color: var(--aqua);
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    border-radius: 7px;
+}
+.botton:hover {
+    background-color: var(--white);
+    color: var(--aqua);
+}
 
 
 
