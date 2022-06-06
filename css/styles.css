@@ -6,6 +6,7 @@
     --blue: #08b6ff;
     --aqua: #0efff9;
     --white:#ffffff;
+    --pink:#00747C;
     --mono:'Ubuntu Mono', monospace;
     --sans:'Ubuntu', sans-serif;
 }
@@ -84,10 +85,24 @@ nav  a {
     display: none;
 }
 
+
 /* seccion de nombre */
+img{
+    border: 7px solid var(--aqua);
+    border-radius: 3px;
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
 #intro{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     color: white;
-    padding: 10rem 1rem 5rem;
+    padding: 6rem 1rem 5rem;
+    align-items: center;
+
 
 }
 #intro p{
@@ -104,6 +119,8 @@ nav  a {
     font-family: var(--sans);
     font-size: 2rem;
     display: block;
+    text-shadow: 2px 2px 4px black, 0 0 25px aqua, 0 0 5px darkblue;
+
 
 }
 
@@ -113,15 +130,15 @@ nav  a {
     color: var(--aqua);
 }
 .botton{
-    background-color: var(--aqua);
-    color: white;
+    background-color: var(--pink);
+    color: var(--white);
     text-decoration: none;
     padding: 0.2rem;
     border-radius: 7px;
 }
 .botton:hover {
-    background-color: var(--white);
-    color: var(--aqua);
+    background-color: var(--aqua);
+    color:var(--pink);
 }
 
 
@@ -134,22 +151,22 @@ nav  a {
         cursor: pointer;
 
     }
+
     #bars{
         display: block;
     }
 
     #check:checked ~ nav {
         display: block;
-        height: 100vh;
-    }
-    header {
 
+    }
+
+    header {
         width: auto;
         margin: 0;
         padding: 1rem;
         flex-wrap: wrap;
         align-items: center;
-
 
     }
 
@@ -157,19 +174,48 @@ nav  a {
         display: inline;
     }
 
-
     nav {
         display: none;
         flex-basis: 100%;
 
-
     }
+
     nav > a {
         display: block;
         margin-left: 0;
         padding: 1em;
         text-align: center;
     }
+
+    /*section name*/
+    #intro{
+        display: block;
+        padding-top: 5rem ;
+
+
+    }
+    #intro div{
+        padding-bottom: 50px;
+
+    }
+    #intro h2{
+        font-size: 1.8rem;
+
+    }
+
+    .name span{
+        font-size: 1.5rem;
+
+    }
+
+    #intro p{
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+
+    }
+
+
+
 
 
 }
