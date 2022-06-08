@@ -20,9 +20,9 @@
     box-sizing: border-box;
 }
 
+
 body {
     color: white;
-    font-size: 1.5rem;
     background-color: black;
     font-size: var(--font-size);
 
@@ -69,6 +69,7 @@ a:hover {
     padding: 1rem;
 }
 
+
 nav  a {
     margin-left: 1rem;
 }
@@ -107,7 +108,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: white;
-    padding: 8rem 1rem ;
+    padding: 11em 1rem ;
     align-items: center;
 }
 
@@ -197,8 +198,10 @@ footer [class*="fa-"]:hover{
     #bars{
         display: block;
     }
-
-    #check:checked ~ nav {
+    
+    
+ 
+    #navbar.active{
         display: block;
     }
 
@@ -208,6 +211,7 @@ footer [class*="fa-"]:hover{
         padding: 1rem;
         flex-wrap: wrap;
         align-items: center;
+        overflow-y: auto;
     }
 
     header > a {
@@ -231,7 +235,7 @@ footer [class*="fa-"]:hover{
 
     #intro{
         display: block;
-        padding:8rem 1rem;
+        padding:3rem 1rem 5rem;
     }
 
     #intro div{
@@ -266,6 +270,12 @@ footer [class*="fa-"]:hover{
     footer p{
         font-size: 1rem;
     }
+  
+
+
+
+
+
 
 
 
