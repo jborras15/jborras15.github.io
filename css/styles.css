@@ -1,4 +1,4 @@
-:root{
+:root {
 
     --black: #000000;
     --dkblue: #0d314b;
@@ -6,14 +6,14 @@
     --bluedark: #096aab;
     --blue: #08b6ff;
     --aqua: #00fffa;
-    --white:#ffffff;
-    --greendark:#00747C;
-    --mono:'Ubuntu Mono', monospace;
-    --sans:'Ubuntu', sans-serif;
+    --white: #ffffff;
+    --greendark: #00747C;
+    --mono: 'Ubuntu Mono', monospace;
+    --sans: 'Ubuntu', sans-serif;
     --font-size: 1.3rem;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: var(--sans);
@@ -51,16 +51,16 @@ a:hover {
 
 /* seccion de navegacion */
 
-#navegador{
+#navegador {
 
     position: fixed;
     width: 100%;
     background-color: black;
 }
 
- header {
+header {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     background-color: var(--black);
     font-size: 80%;
@@ -70,20 +70,22 @@ a:hover {
 }
 
 
-nav  a {
+nav a {
     margin-left: 1rem;
 }
+
 nav [class*="fa-"] {
     font-size: 150%;
     color: var(--aqua);
 }
-nav [class*="fa-"]:hover{
+
+nav [class*="fa-"]:hover {
     color: var(--white);
 }
 
 
-#bars{
-    display:none;
+#bars {
+    display: none;
 }
 
 #check {
@@ -93,48 +95,50 @@ nav [class*="fa-"]:hover{
 
 /* seccion de nombre */
 
-img{
-    border: 5px solid var(--aqua);
-    border-radius: 3px;
+img {
     max-width: 55%;
     height: auto;
     display: block;
     margin: auto;
+    mask-image: linear-gradient(to bottom, black, #0000);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
 }
-#intro{
+
+#intro {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: var(--black);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     color: white;
-    padding: 11em 1rem ;
+    padding: 11em 1rem;
     align-items: center;
 }
 
-#intro p{
+#intro p {
     font-size: 1rem;
     line-height: 2.3rem;
 }
 
-#intro .name{
+#intro .name {
     font-family: var(--mono);
 }
 
-.name span{
+.name span {
     font-family: var(--sans);
     font-size: 3rem;
     display: block;
 
 }
 
-#intro h1{
+#intro h1 {
     font-size: 4rem;
     font-weight: normal;
     color: var(--aqua);
 }
 
-.botton{
+.botton {
     background-color: #39adad;
     color: var(--white);
     padding: 0.2rem;
@@ -152,24 +156,25 @@ img{
 .section-dkblue {
     background-color: var(--dkblue);
 }
-#contacto{
+
+#contacto {
     width: 400px;
     margin: 0 auto;
     text-align: center;
-    padding: 3rem 0 ;
+    padding: 3rem 0;
 }
 
-#contacto p{
+#contacto p {
     margin-top: 3rem;
 }
 
 /* section footer*/
-footer{
+footer {
     text-align: center;
     padding: 4rem 0;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     padding: 0;
     margin: 2rem 0;
@@ -178,30 +183,32 @@ footer ul{
     gap: 2rem;
     font-size: 3rem;
 }
+
 footer [class*="fa-"] {
     font-size: 150%;
     color: var(--aqua);
 }
-footer [class*="fa-"]:hover{
+
+footer [class*="fa-"]:hover {
     color: var(--white);
 }
 
 
 @media (max-width: 750px) {
 
-    #bars [class*="fa"]{
+    #bars [class*="fa"] {
         font-size: 40px;
         color: var(--aqua);
         cursor: pointer;
     }
 
-    #bars{
+    #bars {
         display: block;
     }
-    
-    
- 
-    #navbar.active{
+
+
+
+    #navbar.active {
         display: block;
     }
 
@@ -214,7 +221,7 @@ footer [class*="fa-"]:hover{
         overflow-y: auto;
     }
 
-    header > a {
+    header>a {
         display: inline;
     }
 
@@ -224,7 +231,7 @@ footer [class*="fa-"]:hover{
 
     }
 
-    nav > a {
+    nav>a {
         display: block;
         margin-left: 0;
         padding: 1em;
@@ -233,44 +240,45 @@ footer [class*="fa-"]:hover{
 
     /*section name*/
 
-    #intro{
+    #intro {
         display: block;
-        padding:3rem 1rem 5rem;
+        padding: 3rem 1rem 5rem;
     }
 
-    #intro div{
+    #intro div {
         padding-bottom: 50px;
     }
 
-    #intro h1{
+    #intro h1 {
         font-size: 2.5rem;
     }
 
-    .name span{
+    .name span {
         font-size: 2rem;
     }
 
-    #intro p{
+    #intro p {
         font-size: 1rem;
         line-height: 1.7rem;
     }
 
     /* section contacto*/
 
-    #contacto p{
+    #contacto p {
         margin-top: 3rem;
         font-size: 1.2rem;
     }
 
     /* section footer*/
 
-    footer h2{
+    footer h2 {
         font-size: 1.3rem;
     }
-    footer p{
+
+    footer p {
         font-size: 1rem;
     }
-  
+
 
 
 
